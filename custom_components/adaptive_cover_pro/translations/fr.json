@@ -4,160 +4,160 @@
     "step": {
       "user": {
         "menu_options": {
-          "create_new": "Créer un nouveau store",
-          "duplicate_existing": "Dupliquer depuis un store existant"
+          "create_new": "Créer un nouveau volet",
+          "duplicate_existing": "Dupliquer depuis un volet existant"
         }
       },
       "create_new": {
-        "title": "Créer un nouveau store",
+        "title": "Créer un nouveau volet",
         "data": {
           "name": "Nom",
-          "mode": "Type de store"
+          "mode": "Type de volet"
         }
       },
       "cover_entities": {
-        "title": "Entités de store",
-        "description": "Sélectionnez les entités de store que cette instance va contrôler.",
+        "title": "Entités de volets",
+        "description": "Sélectionner les entités de volets que cette instance contrôlera.",
         "data": {
-          "group": "Entités de store"
+          "group": "Entités de volets"
         },
         "data_description": {
-          "group": "Sélectionnez les entités de store à contrôler via cette instance d'intégration. Vous pouvez sélectionner plusieurs stores en tant que groupe (tous recevront les mêmes commandes de position). Ne sélectionnez que les stores associés à cette fenêtre — créez des instances d'intégration séparées pour des fenêtres différentes."
+          "group": "Sélectionner les entités à contrôler via l'intégration"
         }
       },
       "geometry": {
-        "title": "Géométrie du store",
-        "description": "Configurez les dimensions du store. Ces mesures sont utilisées pour calculer la position de protection solaire.",
+        "title": "Géométrie du volet",
+        "description": "Configurer les dimensions du volet. Ces mesures sont utilisées pour calculer la position de blocage solaire.",
         "data": {
-          "window_height": "Hauteur de fenêtre",
+          "window_height": "Hauteur de la fenêtre",
           "distance_shaded_area": "Zone ombrée",
-          "window_depth": "Profondeur de fenêtre (tableau)",
-          "sill_height": "Hauteur d'appui de fenêtre",
+          "window_depth": "Profondeur de l'embrasure de la fenêtre",
+          "sill_height": "Hauteur du rebord inférieur",
           "window_width": "Largeur de fenêtre",
-          "length_awning": "Longueur de projection du store banne",
-          "angle": "Angle du store banne",
-          "slat_depth": "Largeur de lame",
-          "slat_distance": "Espacement des lames"
+          "length_awning": "Longueur de l'envergure du auvent",
+          "angle": "Angle du auvent",
+          "slat_depth": "Profondeur des lamelles",
+          "slat_distance": "Espacement des lamelles"
         },
         "data_description": {
-          "window_height": "Hauteur de la fenêtre en mètres (du bas au haut de la surface vitrée). Exemples : porte standard = 2,0 m, petite fenêtre = 1,5 m, sol-plafond = 2,5 m. Mesurez depuis le point de départ du store jusqu'à son extrémité entièrement déployée. Note : 1 mètre ≈ 3,3 pieds.",
-          "distance_shaded_area": "Distance maximale jusqu'à laquelle vous acceptez que la lumière directe pénètre dans la pièce (en mètres). Définit votre zone d'éblouissement acceptable. Petite zone (0,3–0,5 m) : ombre maximale. Zone moyenne (0,5–1,0 m) : équilibrée, recommandée pour les espaces de vie. Grande zone (2,0–3,0 m) : lumière abondante. VALEUR PLUS GRANDE = plus de soleil = store PLUS HAUT/OUVERT ; VALEUR PLUS PETITE = moins de soleil = store PLUS BAS/FERMÉ.",
-          "window_depth": "Profondeur du tableau de fenêtre depuis la surface du mur (mètres). Paramètre optionnel pour une précision accrue. Par défaut : 0 (désactivé). Valeurs typiques : affleurant = 0,05 m, cadre standard = 0,10 m, tableau profond = 0,15 m. N'affecte le calcul qu'à des angles > 10°.",
-          "sill_height": "Hauteur du sol jusqu'au bas de la fenêtre (mètres). Par défaut : 0 pour les fenêtres au niveau du sol. Exemple : fenêtre dont le bas est à 1 m du sol → saisir 1,0. Améliore la précision du calcul pour les fenêtres surélevées. Plage : 0,0–3,0 m.",
+          "window_height": "Spécifier la hauteur de la fenêtre en mètres",
+          "distance_shaded_area": "Distance entre le volet et la zone à ombrager en bas en mètres",
+          "window_depth": "Profondeur de l'embrasure de la fenêtre (en mètres). Paramètre optionnel pour une précision avancée. Mettre 0 (par défaut) pour désactiver.",
+          "sill_height": "Hauteur entre le sol et le rebord inférieur de la fenêtre (en mètres). Mettre 0 pour une fenêtre au niveau du sol ou si inconnu.",
           "window_width": "Largeur de l'ouverture de fenêtre en cm. Utilisée par les zones d'éblouissement pour déterminer quelles zones de sol peuvent recevoir de la lumière directe selon l'angle horizontal du soleil.",
-          "length_awning": "Longueur de projection maximale du store banne en mètres (entièrement déployé). Mesurez depuis le point de fixation jusqu'à l'extrémité du tissu. Exemples : store de terrasse = 2,0–3,0 m, store de fenêtre = 1,0–1,5 m.",
-          "angle": "Angle du store banne déployé (0–45°). 0° = horizontal (couverture maximale), 15° = légère inclinaison (drainage typique), 30° = forte inclinaison. Consultez les spécifications du fabricant. La plupart des stores : 0–15°.",
-          "slat_depth": "Largeur d'une lame (mesurée de l'avant vers l'arrière). Tailles courantes : mini-store (1 pouce) = 2,5 cm, standard (2 pouces) = 5 cm, larges lames (2,5–3 pouces) = 6,5–7,5 cm.",
-          "slat_distance": "Espacement vertical entre les centres des lames. Mesurez du centre d'une lame au centre de la suivante. Généralement légèrement supérieur à la largeur de lame. Courant : 3–8 cm selon le type de store."
+          "length_awning": "Longueur totale du auvent en mètres",
+          "angle": "Angle du auvent fixé mesuré perpendiculairement du mur au sol",
+          "slat_depth": "Profondeur de chaque lame individuelle en centimètres",
+          "slat_distance": "Distance verticale entre deux lames en centimètres"
         }
       },
       "sun_tracking": {
-        "title": "Suivi solaire",
-        "description": "Configurez l'orientation de la fenêtre et les angles de suivi solaire.",
+        "title": "Suivi du soleil",
+        "description": "Configurer l'orientation de la fenêtre et les angles de suivi solaire.",
         "data": {
           "set_azimuth": "Azimut de la fenêtre",
-          "fov_left": "Champ de vision gauche",
-          "fov_right": "Champ de vision droit",
-          "min_elevation": "Élévation solaire minimale",
-          "max_elevation": "Élévation solaire maximale",
+          "fov_left": "Angle du champ de vision gauche",
+          "fov_right": "Angle du champ de vision droit",
+          "min_elevation": "Élévation minimale du soleil",
+          "max_elevation": "Élévation maximale du soleil",
           "blind_spot": "Configurer l'angle mort",
           "enable_glare_zones": "Activer les zones d'éblouissement",
           "distance_shaded_area": "Zone ombrée"
         },
         "data_description": {
-          "set_azimuth": "Direction vers laquelle la fenêtre est orientée (0–359°). Nord=0°, Est=90°, Sud=180°, Ouest=270°. Exemple : fenêtre orientée sud = 180°. Utilisez une application boussole ou observez le soleil à midi.",
-          "fov_left": "Largeur de la zone de suivi solaire sur le côté GAUCHE de la fenêtre (degrés). Fenêtres standard : 45° (90° de couverture totale avec les deux côtés), grandes fenêtres/portes vitrées : 60–75°, fenêtres étroites : 30°.",
-          "fov_right": "Largeur de la zone de suivi solaire sur le côté DROIT de la fenêtre (degrés). Fenêtres standard : 45° (90° de couverture totale avec les deux côtés), grandes fenêtres/portes vitrées : 60–75°, fenêtres étroites : 30°.",
-          "min_elevation": "Suivi solaire uniquement si l'élévation est AU-DESSUS de cet angle (degrés au-dessus de l'horizon). 0°=horizon, 45°=mi-hauteur, 90°=zénith. Exemple : 15° pour ignorer le soleil bas du matin/soir. Laisser vide pour tous les angles.",
-          "max_elevation": "Suivi solaire uniquement si l'élévation est EN-DESSOUS de cet angle (degrés au-dessus de l'horizon). Exemple : 60° pour ignorer le soleil haut de midi. Laisser vide pour tous les angles.",
-          "blind_spot": "Activer si des obstacles (arbres, bâtiments, avant-toit, balcon) bloquent le soleil dans une partie de la zone de suivi. Définissez ensuite une plage d'azimut et d'élévation. Laisser désactivé si vous avez une vue dégagée.",
-          "enable_glare_zones": "Protéger des zones spécifiques du sol contre l'éblouissement direct (stores verticaux uniquement)",
-          "distance_shaded_area": "Distance maximale de pénétration de la lumière directe (mètres). VALEUR PLUS GRANDE = store PLUS OUVERT ; VALEUR PLUS PETITE = store PLUS FERMÉ."
+          "set_azimuth": "Ajuster l'azimut",
+          "fov_left": "Angle du champ de vision à gauche du centre de la fenêtre",
+          "fov_right": "Angle du champ de vision à droite du centre de la fenêtre",
+          "min_elevation": "Suivre le soleil uniquement lorsque l'élévation est AU-DESSUS de cet angle (en degrés au-dessus de l'horizon). Élévation solaire : 0° = horizon, 45° = mi-chemin vers le zénith, 90° = directement au-dessus. Utiliser ce paramètre pour ignorer le soleil à certains moments. Exemple : régler à 15° pour ignorer le soleil bas du matin ou du soir. Laisser vide pour suivre le soleil à toutes les élévations.",
+          "max_elevation": "Suivre le soleil uniquement lorsque l'élévation est EN DESSOUS de cet angle (en degrés au-dessus de l'horizon). Élévation solaire : 0° = horizon, 45° = mi-chemin vers le zénith, 90° = directement au-dessus. Utiliser ce paramètre pour ignorer le soleil à certains moments. Exemple : régler à 60° pour ignorer le soleil très haut de midi. Laisser vide pour suivre le soleil à toutes les élévations.",
+          "blind_spot": "Activer si des obstacles bloquent le soleil dans une partie de la zone de suivi (arbres, bâtiments proches, avancée de toit, balcon). Lorsqu'activé, vous définissez une plage azimut + élévation où le soleil est bloqué. Le volet ignore alors la position du soleil lorsqu'il se trouve dans cet « angle mort ». Laisser désactivé si la vue sur le soleil est dégagée toute la journée.",
+          "enable_glare_zones": "Protéger des zones spécifiques du sol contre l'éblouissement direct (volets verticaux uniquement)",
+          "distance_shaded_area": "Distance maximale jusqu'à laquelle vous acceptez que la lumière directe pénètre dans la pièce (en mètres). VALEUR PLUS GRANDE = plus de soleil = volet PLUS HAUT/OUVERT ; VALEUR PLUS PETITE = moins de soleil = volet PLUS BAS/FERMÉ."
         }
       },
       "position": {
         "title": "Paramètres de position",
-        "description": "Configurez les limites de position, les valeurs par défaut et le comportement au coucher du soleil.",
+        "description": "Configurer les limites de position du volet, les valeurs par défaut et le comportement au coucher du soleil.",
         "data": {
           "default_percentage": "Position par défaut",
           "max_position": "Position maximale",
-          "enable_max_position": "Appliquer le maximum uniquement pendant le suivi solaire",
+          "enable_max_position": "Forcer la position maximale uniquement lorsque le soleil est devant la fenêtre",
           "min_position": "Position minimale",
-          "enable_min_position": "Appliquer le minimum uniquement pendant le suivi solaire",
-          "sunset_position": "Position au coucher du soleil",
-          "sunset_offset": "Décalage coucher du soleil",
-          "sunrise_offset": "Décalage lever du soleil",
+          "enable_min_position": "Forcer la position minimale uniquement lorsque le soleil est devant la fenêtre",
+          "sunset_position": "Position du coucher de soleil",
+          "sunset_offset": "Décalage du coucher de soleil",
+          "sunrise_offset": "Décalage du lever du soleil",
           "open_close_threshold": "Seuil d'ouverture/fermeture",
-          "inverse_state": "Inverser l'état (nécessaire pour certains stores ne respectant pas les directives HA)",
-          "interp": "Activer l'étalonnage de position (mappage personnalisé ouverture/fermeture)"
+          "inverse_state": "Inverser l'état (nécessaire pour certains volets qui ne suivent pas les directives HA)",
+          "interp": "Activer la calibration de position (mappage personnalisé)"
         },
         "data_description": {
-          "default_percentage": "Position du store lorsque le soleil n'est pas face à la fenêtre (0–100%). 0% = fermé (store baissé / banne rétractée), 50% = mi-ouvert, 100% = ouvert (store levé / banne déployée). C'est la position de repos lorsque le suivi solaire est inactif.",
-          "max_position": "Limite maximale de position (0–100%). 100% = ouvert. Le store ne dépassera jamais cette valeur. Utilisation : empêcher l'ouverture complète (80%), maintenir une ombre permanente (60–70%), protection anti-coincement en haut (95%).",
-          "enable_max_position": "Contrôle QUAND la limite maximale s'applique. DÉCOCHÉ (défaut, recommandé) : le maximum s'applique TOUJOURS. COCHÉ (avancé) : le maximum s'applique UNIQUEMENT lors du suivi solaire direct.",
-          "min_position": "Limite minimale de position (0–99%). 0% = fermé. Le store ne descendra jamais en dessous de cette valeur. Utilisation : empêcher la fermeture complète (20%), maintenir un minimum de lumière (30–40%), protection anti-coincement en bas (5%).",
-          "enable_min_position": "Contrôle QUAND la limite minimale s'applique. DÉCOCHÉ (défaut, recommandé) : le minimum s'applique TOUJOURS. COCHÉ (avancé) : le minimum s'applique UNIQUEMENT lors du suivi solaire direct.",
-          "sunset_position": "Position du store après le coucher du soleil. Laisser le curseur vide pour utiliser la position par défaut. 0% = fermé, 100% = ouvert. Usages courants : intimité (0%), air nocturne (100%), semi-ouvert (30–50%).",
-          "sunset_offset": "Décalage de l'heure du coucher du soleil (± minutes). Positif : appliquer X minutes APRÈS le coucher. Négatif : X minutes AVANT le coucher. Zéro : exactement au coucher.",
-          "sunrise_offset": "Décalage de l'heure du lever du soleil (± minutes). Positif : démarrer X minutes APRÈS le lever. Négatif : X minutes AVANT le lever. Zéro : exactement au lever. Se combine avec l'heure de début (le plus tardif s'applique).",
-          "open_close_threshold": "Seuil de position pour les stores ne supportant que les commandes ouverture/fermeture. Au-dessus ou égal à ce seuil : ouverture ; en dessous : fermeture. Par défaut : 50%.",
-          "inverse_state": "Activer pour les stores dont la logique de position est inversée. Standard : 0 = fermé, 100 = ouvert. Inversé : 0 = ouvert, 100 = fermé. N'activer que si votre store présente un comportement inverse.",
-          "interp": "Activer le mappage de position personnalisé pour les stores ne répondant pas linéairement aux commandes 0–100%. Une section 'Étalonnage de position' apparaîtra dans le menu des options."
+          "default_percentage": "Position par défaut du volet en pourcentage",
+          "max_position": "Position maximale réglable du volet en pourcentage",
+          "enable_max_position": "Définit QUAND la limite de position maximale s'applique. NON COCHÉ (par défaut, recommandé) : la position maximale s'applique TOUT LE TEMPS — pendant le suivi solaire, la position par défaut, les modes climatiques, etc. Le volet ne dépasse jamais cette valeur maximale. COCHÉ (avancé) : la position maximale ne s'applique QUE lorsque le soleil est directement en face de la fenêtre. En mode par défaut ou de secours, le volet peut dépasser cette valeur. La plupart des utilisateurs devraient laisser cette option NON COCHÉE pour une protection cohérente.",
+          "min_position": "Position minimale réglable du volet en pourcentage",
+          "enable_min_position": "Définit QUAND la limite de position minimale s'applique. NON COCHÉ (par défaut, recommandé) : la position minimale s'applique TOUT LE TEMPS — pendant le suivi solaire, la position par défaut, les modes climatiques, etc. Le volet ne descend jamais en dessous de cette valeur. COCHÉ (avancé) : la position minimale ne s'applique QUE lorsque le soleil est directement en face de la fenêtre. En mode par défaut ou de secours, le volet peut descendre en dessous de cette valeur. La plupart des utilisateurs devraient laisser cette option NON COCHÉE pour une protection cohérente.",
+          "sunset_position": "Position appliquée après le coucher du soleil",
+          "sunset_offset": "Décalage (±) en minutes par rapport à l'heure du coucher du soleil",
+          "sunrise_offset": "Décalage (±) en minutes par rapport à l'heure du lever du soleil",
+          "open_close_threshold": "Seuil de position pour les volets ne supportant que les commandes ouvrir/fermer (sans contrôle de position). Lorsque la position calculée est supérieure ou égale à ce seuil, le volet s'ouvre ; en dessous, il se ferme. Valeur par défaut : 50 % (s'ouvre à partir du milieu). Une valeur plus élevée (60–70 %) garde le volet fermé plus souvent ; une valeur plus basse (30–40 %) l'ouvre plus souvent. N'affecte que les volets sans contrôle de position — les volets à position gérée ignorent ce paramètre et utilisent la position exacte calculée.",
+          "inverse_state": "Activer pour les volets dont la logique de position est inversée. Standard : 0 = fermé/abaissé, 100 = ouvert/levé. Inversé : 0 = ouvert/levé, 100 = fermé/abaissé. À activer UNIQUEMENT si votre volet se comporte à l'inverse (ex. : 100 % ferme au lieu d'ouvrir) ou si la documentation indique « inversé » ou « reversed ». Tester manuellement avant d'activer. La plupart des volets n'en ont pas besoin.",
+          "interp": "Activer le mappage personnalisé de position pour calibrer les volets qui ne réagissent pas de manière linéaire aux commandes 0–100 %. Lorsqu'activé, une section « Calibration de position » apparaît dans le menu des options pour configurer les valeurs de mappage. Cas d'usage : mouvement non linéaire, préférences de plage, comportement atypique du volet. Laisser désactivé pour un fonctionnement normal."
         }
       },
       "automation": {
-        "title": "Planning et minuterie",
-        "description": "Configurez la minuterie d'automatisation, les seuils de changement de position et les heures de fonctionnement automatique.",
+        "title": "Automatisation et horaires",
+        "description": "Configurer les horaires, seuils de changement de position et heures actives pour le contrôle automatique.",
         "data": {
-          "delta_position": "Ajustement de position minimal",
-          "delta_time": "Intervalle minimal entre changements de position",
+          "delta_position": "Écart minimal de déplacement",
+          "delta_time": "Intervalle de temps minimum entre deux mouvements",
           "start_time": "Heure de début",
-          "start_entity": "Entité indiquant l'heure de début",
-          "end_time": "Heure de fin",
-          "end_entity": "Entité indiquant l'heure de fin",
-          "return_sunset": "Déplacer les stores vers la position par défaut actuelle à l'heure de fin"
+          "start_entity": "Entité pour l'heure de début",
+          "end_time": "Fin de période",
+          "end_entity": "Entité indiquant la fin de période",
+          "return_sunset": "Envoyer les volets à la position par défaut effective à l'heure de fin"
         },
         "data_description": {
-          "delta_position": "Changement de position minimal (%) avant d'ajuster le store. Évite les micro-ajustements lors du déplacement lent du soleil. Valeurs typiques : 1–2% (très réactif), 5% (équilibré, recommandé), 10% (moins fréquent). Réduit l'usure du moteur.",
-          "delta_time": "Délai minimal (minutes) entre les ajustements. Évite les changements rapides. Valeurs typiques : 2–3 min (très réactif), 5–10 min (équilibré, recommandé), 15–20 min (lent). Minimum : 2 minutes.",
-          "start_time": "Ne pas démarrer le contrôle automatique avant cette heure (format 24h). Laisser vide pour démarrer au lever du soleil.",
-          "start_entity": "Entité dont l'état représente l'heure de début, remplaçant l'heure fixe ci-dessus.",
-          "end_time": "Arrêter le contrôle automatique après cette heure (format 24h). Laisser vide pour continuer jusqu'au coucher du soleil.",
-          "end_entity": "Entité dont l'état représente l'heure de fin, remplaçant l'heure fixe ci-dessus.",
-          "return_sunset": "Lorsque l'heure de fin opérationnelle est atteinte, envoyer les stores vers la position par défaut effective actuelle (position coucher du soleil si celui-ci est déjà passé, sinon position par défaut normale)."
+          "delta_position": "Changement de position minimum requis avant d'ajuster la position du volet",
+          "delta_time": "Intervalle de temps minimum entre deux changements de position ; minimum 2 minutes",
+          "start_time": "Heure de début quotidienne ; avant cette heure, le volet reste statique",
+          "start_entity": "Entité remplaçant l'heure de début fixe définie ci-dessus",
+          "end_time": "Heure de fin quotidienne ; après cette heure, le volet reste statique",
+          "end_entity": "Entité remplaçant l'heure de fin fixe définie ci-dessus",
+          "return_sunset": "Lorsque l'heure de fin est atteinte, envoyer les volets à la position par défaut effective (position de coucher de soleil si celui-ci est déjà passé, sinon position par défaut normale). Utile si votre heure de fin est avant le coucher du soleil et que vous souhaitez que les volets soient correctement positionnés pour la soirée."
         }
       },
       "manual_override": {
-        "title": "Priorité manuelle",
-        "description": "Configurez l'interaction entre les changements de position manuels et le contrôle automatique.",
+        "title": "Forçage manuel",
+        "description": "Configurer la manière dont les changements manuels interagissent avec le contrôle automatique.",
         "data": {
-          "manual_override_duration": "Durée de la priorité manuelle",
-          "manual_override_reset": "Réinitialiser le minuteur de priorité manuelle",
-          "manual_threshold": "Seuil de priorité manuelle",
-          "manual_ignore_intermediate": "Ignorer les positions intermédiaires lors de la priorité manuelle"
+          "manual_override_duration": "Durée du forçage manuel",
+          "manual_override_reset": "Réinitialiser la durée du forçage manuel",
+          "manual_threshold": "Seuil de détection du mode manuel",
+          "manual_ignore_intermediate": "Ignorer les positions intermédiaires durant le mode manuel (ouverture & fermeture)"
         },
         "data_description": {
-          "manual_override_duration": "Durée (minutes) de pause du contrôle automatique après un ajustement manuel. Valeurs typiques : 10–15 min (courte pause), 30 min (moyenne), 60–120 min (longue), 0 (désactivé — non recommandé).",
-          "manual_override_reset": "Réinitialiser le minuteur après chaque ajustement manuel. Activé : chaque modification repart le minuteur. Désactivé : la durée ne s'applique qu'au premier ajustement.",
-          "manual_threshold": "Différence de position (%) déclenchant la priorité manuelle (défaut : 1%). Typique : 1–2% (sensible), 5% (recommandé), 10% (grandes modifications seulement). Évite les faux déclenchements dus aux dérivées du moteur.",
-          "manual_ignore_intermediate": "Ignorer les positions intermédiaires pendant les opérations d'ouverture/fermeture. Évite les faux déclenchements lors du déplacement vers la position cible."
+          "manual_override_duration": "Durée du contrôle manuel avant retour au mode automatique",
+          "manual_override_reset": "Réinitialiser la durée après chaque ajustement manuel",
+          "manual_threshold": "Différence de position (%) déclenchant un forçage manuel",
+          "manual_ignore_intermediate": "Ignorer les positions intermédiaires pendant les mouvements manuels"
         }
       },
       "force_override": {
-        "title": "Priorité forcée",
-        "description": "Configurez des capteurs binaires qui remplacent inconditionnellement le contrôle automatique et déplacent les stores vers une position fixe. La priorité forcée reste active même lorsque le commutateur de contrôle automatique est désactivé.",
+        "title": "Forçage par contrainte",
+        "description": "Configurer des capteurs binaires qui forcent inconditionnellement les volets à une position fixe.",
         "data": {
-          "force_override_sensors": "Capteurs de priorité forcée",
-          "force_override_position": "Position de priorité forcée"
+          "force_override_sensors": "Capteurs de forçage par contrainte",
+          "force_override_position": "Position de forçage par contrainte"
         },
         "data_description": {
-          "force_override_sensors": "Capteurs binaires qui, lorsqu'actifs, déplacent tous les stores vers la position configurée, indépendamment de tout autre paramètre, y compris le commutateur de contrôle automatique. Le contrôle manuel reste possible. Laisser vide pour désactiver cette fonction.",
-          "force_override_position": "Position (0–100%) vers laquelle déplacer les stores lors de la priorité forcée. 0% = fermé (store baissé / banne rétractée), 100% = ouvert (store levé / banne déployée). Par défaut : 0%."
+          "force_override_sensors": "Capteurs binaires qui forcent les volets à la position configurée lorsqu'ils sont actifs.",
+          "force_override_position": "Position (0–100 %) appliquée lorsque les capteurs de forçage par contrainte sont actifs."
         }
       },
       "custom_position": {
         "title": "Positions personnalisées",
-        "description": "Configurez des capteurs binaires qui placent le store à des positions spécifiques lorsqu'ils sont actifs. Chaque slot a son propre capteur, position cible et priorité. Le slot actif ayant la priorité la plus haute gagne.",
+        "description": "Configurer des capteurs binaires définissant des positions spécifiques. Le premier capteur actif (1→4) détermine la position.",
         "data": {
           "custom_position_sensor_1": "Capteur 1",
           "custom_position_1": "Position pour le capteur 1",
@@ -173,35 +173,35 @@
           "custom_position_priority_4": "Priorité pour le slot 4"
         },
         "data_description": {
-          "custom_position_sensor_1": "Capteur binaire qui, lorsque 'activé', déplace le store vers la position configurée. Laisser vide pour ignorer ce slot.",
-          "custom_position_1": "Position (0–100%) lors de l'activation du capteur 1. 0% = fermé, 100% = ouvert.",
-          "custom_position_priority_1": "Priorité dans le pipeline (1–99). Plus élevée = évaluée en premier. Par défaut 77, entre Priorité manuelle (80) et Délai de détection de mouvement (75).",
-          "custom_position_sensor_2": "Capteur binaire pour le slot 2. Laisser vide pour ignorer.",
-          "custom_position_2": "Position (0–100%) lors de l'activation du capteur 2.",
-          "custom_position_priority_2": "Priorité dans le pipeline pour le slot 2 (1–99, défaut 77).",
-          "custom_position_sensor_3": "Capteur binaire pour le slot 3. Laisser vide pour ignorer.",
-          "custom_position_3": "Position (0–100%) lors de l'activation du capteur 3.",
-          "custom_position_priority_3": "Priorité dans le pipeline pour le slot 3 (1–99, défaut 77).",
-          "custom_position_sensor_4": "Capteur binaire pour le slot 4. Laisser vide pour ignorer.",
-          "custom_position_4": "Position (0–100%) lors de l'activation du capteur 4.",
-          "custom_position_priority_4": "Priorité dans le pipeline pour le slot 4 (1–99, défaut 77)."
+          "custom_position_sensor_1": "Capteur binaire qui, lorsqu'il est actif, déplace le volet vers sa position configurée.",
+          "custom_position_1": "Position (0–100 %) appliquée lorsque le capteur 1 est actif.",
+          "custom_position_priority_1": "Priorité dans le pipeline (1–99). Plus élevée = évaluée en premier. Par défaut 77, entre Forçage manuel (80) et Temporisation de mouvement (75).",
+          "custom_position_sensor_2": "Capteur binaire pour l'emplacement 2.",
+          "custom_position_2": "Position (0–100 %) appliquée lorsque le capteur 2 est actif.",
+          "custom_position_priority_2": "Priorité dans le pipeline pour le slot 2 (1–99, par défaut 77).",
+          "custom_position_sensor_3": "Capteur binaire pour l'emplacement 3.",
+          "custom_position_3": "Position (0–100 %) appliquée lorsque le capteur 3 est actif.",
+          "custom_position_priority_3": "Priorité dans le pipeline pour le slot 3 (1–99, par défaut 77).",
+          "custom_position_sensor_4": "Capteur binaire pour l'emplacement 4.",
+          "custom_position_4": "Position (0–100 %) appliquée lorsque le capteur 4 est actif.",
+          "custom_position_priority_4": "Priorité dans le pipeline pour le slot 4 (1–99, par défaut 77)."
         }
       },
       "motion_override": {
-        "title": "Priorité mouvement",
-        "description": "Configurez des capteurs de mouvement et d'occupation pour le contrôle automatique basé sur la présence.",
+        "title": "Forçage par présence",
+        "description": "Configurer les capteurs de mouvement et de présence pour un contrôle basé sur l'occupation.",
         "data": {
-          "motion_sensors": "Capteurs de mouvement/occupation",
-          "motion_timeout": "Délai d'expiration mouvement"
+          "motion_sensors": "Capteurs de mouvement/présence",
+          "motion_timeout": "Durée de temporisation"
         },
         "data_description": {
-          "motion_sensors": "Capteurs binaires activant/désactivant le positionnement solaire automatique selon l'occupation. Si UN capteur détecte du mouvement, les stores utilisent le positionnement automatique. Si TOUS les capteurs ne détectent aucun mouvement pendant la durée du délai, les stores reviennent à la position par défaut. Laisser vide pour désactiver.",
-          "motion_timeout": "Durée (secondes) d'attente après le dernier mouvement avant de retourner à la position par défaut. Plage : 30–3600 secondes (0,5–60 minutes). Par défaut : 300 secondes (5 minutes)."
+          "motion_sensors": "Capteurs activant/désactivant le positionnement solaire automatique selon la présence.",
+          "motion_timeout": "Durée (en secondes) avant retour à la position par défaut après absence de mouvement."
         }
       },
       "weather_override": {
-        "title": "Priorité météo",
-        "description": "Configurez des priorités de sécurité basées sur la météo. Toute condition configurée déclenche la rétraction des stores. Les entrées non configurées sont ignorées.",
+        "title": "Forçage météo",
+        "description": "Configurez des priorités de sécurité basées sur la météo. Toute condition configurée déclenche la rétraction des volets. Les entrées non configurées sont ignorées.",
         "data": {
           "weather_bypass_auto_control": "Actif lorsque le contrôle automatique est désactivé",
           "weather_wind_speed_sensor": "Capteur de vitesse du vent",
@@ -217,7 +217,7 @@
           "weather_timeout": "Délai de réinitialisation"
         },
         "data_description": {
-          "weather_bypass_auto_control": "Si activé, la priorité météo déplace les stores vers la position configurée même lorsque le contrôle automatique est désactivé. Garantit une protection permanente contre le vent, la pluie et les intempéries.",
+          "weather_bypass_auto_control": "Si activé, la priorité météo déplace les volets vers la position configurée même lorsque le contrôle automatique est désactivé. Garantit une protection permanente contre le vent, la pluie et les intempéries.",
           "weather_wind_speed_sensor": "Capteur numérique mesurant la vitesse du vent. La priorité s'active quand la valeur atteint ou dépasse le seuil. Laisser vide pour ignorer.",
           "weather_wind_direction_sensor": "Optionnel : déclencher la priorité vent uniquement si le vent souffle vers l'azimut de la fenêtre (dans la tolérance de direction). Laisser vide pour réagir à la vitesse seule.",
           "weather_wind_speed_threshold": "Seuil de vitesse du vent déclenchant la priorité. Valeur comparée directement au capteur — aucune conversion d'unité.",
@@ -227,48 +227,48 @@
           "weather_is_raining_sensor": "Capteur binaire de détection de pluie. La priorité s'active quand ce capteur est 'activé'. Laisser vide pour ignorer.",
           "weather_is_windy_sensor": "Capteur binaire de détection de vent. La priorité s'active quand ce capteur est 'activé'. Laisser vide pour ignorer.",
           "weather_severe_sensors": "Capteurs binaires pour conditions sévères (grêle, gel, orage, etc.). La priorité s'active si UN capteur est 'activé'. Laisser vide pour ignorer.",
-          "weather_override_position": "Position (0–100%) lors de la priorité météo. 0% = fermé (store baissé / banne rétractée), 100% = ouvert. Par défaut : 0%.",
+          "weather_override_position": "Position (0–100%) lors de la priorité météo. 0% = fermé (volet baissé / banne rétractée), 100% = ouvert. Par défaut : 0%.",
           "weather_timeout": "Secondes d'attente après la disparition de TOUTES les conditions avant de reprendre le contrôle normal. 0 pour une reprise immédiate."
         }
       },
       "climate": {
         "title": "Configuration climatique",
-        "description": "Configurez le contrôle éco-énergétique et confortable en fonction du climat. Ces paramètres permettent à l'intégration d'adapter le comportement des stores selon la température, la météo et la présence.",
+        "description": "Ajouter des variables de configuration climatique supplémentaires.",
         "data": {
-          "weather_entity": "Entité météo (optionnel)",
-          "lux_entity": "Capteur de luminosité (optionnel)",
-          "lux_threshold": "Seuil de luminosité",
+          "weather_entity": "Entité météo (optionnelle)",
+          "lux_entity": "Capteur de luminosité (lux) (optionnel)",
+          "lux_threshold": "Seuil de luminosité (lux)",
           "irradiance_entity": "Capteur d'irradiance (optionnel)",
-          "irradiance_threshold": "Seuil d'irradiance",
+          "irradiance_threshold": "Seuil du capteur d'irradiance",
           "cloud_coverage_entity": "Capteur de couverture nuageuse (optionnel)",
           "cloud_coverage_threshold": "Seuil de couverture nuageuse",
           "cloud_suppression": "Supprimer le contrôle anti-éblouissement par faible luminosité",
           "climate_mode": "Activer le mode climatique",
-          "temp_entity": "Capteur de température intérieure",
+          "temp_entity": "Entité de température intérieure",
           "temp_low": "Seuil de température basse",
           "temp_high": "Seuil de température haute",
           "outside_temp": "Capteur de température extérieure (optionnel)",
-          "presence_entity": "Entité de présence (optionnel)",
+          "presence_entity": "Entité de présence (optionnelle)",
           "transparent_blind": "Store transparent",
           "winter_close_insulation": "Mode isolation hivernal"
         },
         "data_description": {
-          "weather_entity": "Intégration météo optionnelle pour un contrôle adapté aux nuages. Temps nuageux/pluvieux : pas de gain solaire hivernal, retour à la position par défaut. Temps ensoleillé : stratégies climatiques complètes. Laisser vide pour toujours supposer le soleil.",
-          "lux_entity": "Capteur d'intensité lumineuse optionnel (intérieur ou extérieur). Mesure la lumière visible en lux. Typique : 5000–10000 lux pour soleil direct. Laisser vide si indisponible.",
-          "lux_threshold": "Seuil de luminosité pour 'ensoleillé'. Au-dessus : soleil présent, stratégies climatiques. En-dessous : traiter comme nuageux. Typique : 5000–10000 lux.",
-          "irradiance_entity": "Capteur de rayonnement solaire optionnel (extérieur, W/m²). Laisser vide si indisponible.",
-          "irradiance_threshold": "Seuil d'irradiance pour 'ensoleillé' (W/m²). Typique : 300–500 W/m² pour soleil direct, 100–200 W/m² par temps couvert.",
+          "weather_entity": "Surveille les conditions météorologiques et la température extérieure",
+          "lux_entity": "Utilisé pour réduire l'éblouissement en mode présence",
+          "lux_threshold": "Seuil de luminosité déclenchant la réduction d'éblouissement",
+          "irradiance_entity": "Utilisé pour réduire l'éblouissement en mode présence",
+          "irradiance_threshold": "Seuil d'irradiance déclenchant la réduction d'éblouissement",
           "cloud_coverage_entity": "Capteur de couverture nuageuse optionnel (0–100%). Au-delà du seuil, le contrôle anti-éblouissement est supprimé. Laisser vide si indisponible.",
           "cloud_coverage_threshold": "Pourcentage de couverture nuageuse supprimant le contrôle anti-éblouissement. Exemple : 75 = 75% nuageux = couvert. Par défaut : 75%.",
           "cloud_suppression": "Supprime le contrôle anti-éblouissement lorsque la météo, le lux, l'irradiance ou la couverture nuageuse indiquent l'absence de soleil direct. Ne nécessite pas le mode climatique.",
           "climate_mode": "Activer les stratégies basées sur la température. Activé : le comportement s'adapte à la température intérieure — ouverture complète en hiver pour capter la chaleur, fermeture complète en été contre la surchauffe. Nécessite un capteur de température intérieure.",
           "temp_entity": "Capteur de température pour le mode climatique (intérieur recommandé). Les unités doivent correspondre au système Home Assistant (°C ou °F).",
-          "temp_low": "Seuil de température pour le MODE HIVERNAL. Si température < cette valeur : ouverture complète par temps ensoleillé. Recommandé : 18–20°C (65–68°F).",
-          "temp_high": "Seuil de température pour le MODE ESTIVAL. Si température > cette valeur : fermeture complète contre la surchauffe. Recommandé : 23–25°C (73–77°F).",
-          "outside_temp": "Capteur de température extérieure optionnel pour une meilleure détection estivale. Le mode estival nécessite alors : température intérieure > seuil haut ET température extérieure > seuil extérieur. Laisser vide pour utiliser uniquement la température intérieure.",
-          "presence_entity": "Capteur de présence optionnel (domicile/absent). Types supportés : device_tracker, person, zone, binary_sensor. Absent : fermeture complète en été, ouverture par soleil en hiver. Laisser vide pour supposer une présence permanente.",
-          "transparent_blind": "Cocher si votre store est translucide (voile/tissu léger). Modifie le comportement estival : fermeture à 0% en été. Décocher pour les stores opaques/occultants.",
-          "winter_close_insulation": "Fermer les stores en hiver lorsque le soleil n'est pas face à la fenêtre. Assure l'isolation en maintenant l'air froid à l'extérieur. Lorsque le soleil entre dans le champ de vision, les stores s'ouvrent normalement."
+          "temp_low": "Température minimale de confort",
+          "temp_high": "Température maximale de confort",
+          "outside_temp": "Remplace la température extérieure de l'entité météo si définie",
+          "presence_entity": "Entité représentant l'état de présence",
+          "transparent_blind": "Le store est transparent et doit se fermer complètement en mode été",
+          "winter_close_insulation": "Fermer les volets en hiver lorsque le soleil n'est pas face à la fenêtre. Assure l'isolation en maintenant l'air froid à l'extérieur. Lorsque le soleil entre dans le champ de vision, les volets s'ouvrent normalement."
         }
       },
       "weather": {
@@ -277,21 +277,21 @@
           "weather_state": "Conditions météorologiques"
         },
         "data_description": {
-          "weather_state": "Sélectionnez les états météo signifiant 'soleil présent' pour le mode climatique. Sélection recommandée (pré-remplie) : ☑ sunny (soleil direct), ☑ partlycloudy (un peu de soleil), ☐ cloudy (pas de soleil direct), ☐ clear (généralement de nuit). La plupart des utilisateurs peuvent conserver les valeurs par défaut."
+          "weather_state": "Choisir les conditions météorologiques permettant le contrôle automatique des volets."
         }
       },
       "blind_spot": {
         "title": "Angle mort",
-        "description": "Définissez des zones où des obstacles bloquent le soleil (arbres, bâtiments, avant-toits). Les valeurs angulaires sont des degrés relatifs dans votre champ de vision, 0 étant la limite gauche du champ de vision.",
+        "description": "Configurer l'angle mort du volet. Les valeurs sont exprimées en degrés relatifs au champ de vision.",
         "data": {
-          "blind_spot_left": "Début gauche de l'angle mort",
-          "blind_spot_right": "Fin droite de l'angle mort",
-          "blind_spot_elevation": "Élévation de l'angle mort"
+          "blind_spot_left": "Début angle mort gauche",
+          "blind_spot_right": "Fin angle mort droit",
+          "blind_spot_elevation": "Élévation angle mort"
         },
         "data_description": {
-          "blind_spot_left": "Bord gauche de la zone d'angle mort (angle horizontal en degrés depuis la limite gauche du champ de vision). 0 = à la limite la plus à gauche. Exemple : champ gauche = 45°, arbre bloque 10–20° → saisir 10.",
-          "blind_spot_right": "Bord droit de la zone d'angle mort (degrés depuis la limite gauche du champ de vision, doit être > bord gauche). Exemple : saisir 20. Définit la zone sans suivi solaire entre les bords gauche et droit.",
-          "blind_spot_elevation": "Élévation solaire maximale (degrés) où l'angle mort s'applique. Exemple : avant-toit bloquant le soleil uniquement à < 30° → saisir 30. Bâtiment haut → saisir 90."
+          "blind_spot_left": "Bord gauche de l'angle mort",
+          "blind_spot_right": "Bord droit de l'angle mort",
+          "blind_spot_elevation": "Toute valeur égale ou inférieure est incluse dans l'angle mort"
         }
       },
       "glare_zones": {
@@ -317,7 +317,7 @@
           "glare_zone_4_radius": "Rayon zone 4"
         },
         "data_description": {
-          "enable_glare_zones": "Si activé, le store descendra pour ombrager toutes les zones actives.",
+          "enable_glare_zones": "Si activé, le volet descendra pour ombrager toutes les zones actives.",
           "glare_zone_1_name": "Nom de cette zone (ex. 'Bureau'). Laisser vide pour ignorer.",
           "glare_zone_1_x": "Décalage gauche/droite depuis le centre de fenêtre en cm. Positif = droite.",
           "glare_zone_1_y": "Distance dans la pièce en cm (perpendiculaire à la fenêtre).",
@@ -337,49 +337,49 @@
         }
       },
       "interp": {
-        "title": "Étalonnage de position",
-        "description": "Ajustez le mappage de position pour un comportement non standard. Utiliser l'ajustement 2 points (interp_start/end) pour les stores à plage limitée (ex. 10–90%). Utiliser l'interpolation de liste avancée pour les stores non linéaires. Non nécessaire pour la plupart des stores.",
+        "title": "Calibration de position",
+        "description": "Ajuster les valeurs auxquelles votre volet s'ouvre ou se ferme efficacement.",
         "data": {
-          "interp_start": "Valeur de début d'ouverture",
-          "interp_end": "Valeur de début de fermeture",
+          "interp_start": "Valeur où commence l'ouverture",
+          "interp_end": "Valeur où commence la fermeture",
           "interp_list": "Liste d'interpolation",
           "interp_list_new": "Liste d'interpolation personnalisée"
         },
         "data_description": {
-          "interp_start": "Valeur de position physique à partir de laquelle le store commence à s'ouvrir (étalonnage 2 points simple). Exemple : si le store ne commence à bouger qu'à 10%, saisir 10.",
-          "interp_end": "Valeur de position physique à laquelle le store est complètement ouvert (étalonnage 2 points simple). Exemple : si le store est complètement ouvert à 90%, saisir 90.",
-          "interp_list": "Positions d'entrée pour le mappage d'interpolation (positions calculées par l'intégration). Saisir des valeurs régulièrement espacées : 0, 25, 50, 75, 100. Minimum 2 valeurs, même longueur que la liste personnalisée.",
-          "interp_list_new": "Positions de sortie pour le mappage d'interpolation (positions réellement envoyées au store). Saisir les positions réelles correspondantes : 0, 20, 40, 65, 100. Même longueur que la liste d'interpolation."
+          "interp_start": "Valeur de position à partir de laquelle le volet commence à s'ouvrir (étalonnage 2 points simple). Exemple : si le volet ne commence à bouger qu'à 10%, saisir 10.",
+          "interp_end": "Valeur de position à laquelle le volet est complètement ouvert (étalonnage 2 points simple). Exemple : si le volet est complètement ouvert à 90%, saisir 90.",
+          "interp_list": "Liste de valeurs d'interpolation (0 = fermé, 100 = ouvert)",
+          "interp_list_new": "Plage personnalisée d'interpolation (début = fermé, fin = ouvert)"
         }
       },
       "device_association": {
-        "title": "Associer à un appareil existant",
-        "description": "Associez optionnellement les entités de cette intégration à un appareil existant (ex. le moteur physique du store). Sélectionner 'Aucun' pour les conserver comme appareil virtuel Adaptive Cover indépendant.",
+        "title": "Association à un appareil existant",
+        "description": "Associer éventuellement les entités de cette intégration à un appareil physique existant.",
         "data": {
           "linked_device_id": "Associer à l'appareil"
         },
         "data_description": {
-          "linked_device_id": "Sélectionnez un appareil physique dans lequel fusionner les entités de cette intégration. Les capteurs, commutateurs et boutons apparaîtront directement sous cet appareil dans Home Assistant. Sélectionner 'Aucun (appareil indépendant)' pour revenir à un appareil virtuel Adaptive Cover séparé."
+          "linked_device_id": "Sélectionner un appareil physique auquel rattacher les entités de cette intégration."
         }
       },
       "duplicate_select": {
-        "title": "Dupliquer le store — Sélectionner la source",
-        "description": "Choisissez le store existant dont vous souhaitez dupliquer les paramètres.",
+        "title": "Dupliquer un volet — Sélection de la source",
+        "description": "Choisir le volet existant dont copier les paramètres.",
         "data": {
-          "source_entry": "Store source"
+          "source_entry": "Volet source"
         }
       },
       "duplicate_configure": {
-        "title": "Dupliquer le store — Configurer",
-        "description": "Saisissez les paramètres uniques du nouveau store. Tous les autres paramètres seront copiés depuis la source.",
+        "title": "Dupliquer un volet — Configuration",
+        "description": "Saisir les paramètres uniques du nouveau volet. Les autres seront copiés.",
         "data": {
           "name": "Nom",
-          "entities": "Entités de store",
+          "entities": "Entités du volet",
           "azimuth": "Azimut de la fenêtre"
         }
       },
       "summary": {
-        "title": "Résumé de la configuration",
+        "title": "Résumé de configuration",
         "description": "{summary}"
       },
       "setup_mode": {
@@ -391,7 +391,7 @@
         }
       },
       "light_cloud": {
-        "title": "Capteurs de lumière et suppression nuageuse",
+        "title": "Capteurs de lumière et couverture nuageuse",
         "description": "Configurez des capteurs de lumière et météo pour détecter quand les nuages bloquent la lumière directe. Ces fonctions sont indépendantes du mode climatique.",
         "data": {
           "weather_entity": "Entité météo (optionnel)",
@@ -407,7 +407,7 @@
       },
       "temperature_climate": {
         "title": "Température et mode climatique",
-        "description": "Activez le mode climatique pour ajuster les positions des stores selon la température intérieure/extérieure, la détection de présence et les stratégies saisonnières.",
+        "description": "Activez le mode climatique pour ajuster les positions des volets selon la température intérieure/extérieure, la détection de présence et les stratégies saisonnières.",
         "data": {
           "climate_mode": "Activer le mode climatique",
           "temp_entity": "Capteur de température intérieure",
@@ -422,179 +422,179 @@
     },
     "abort": {
       "user_cancelled": "Action annulée par l'utilisateur",
-      "source_not_found": "Le store source n'existe plus."
+      "source_not_found": "Le volet source n'existe plus."
     }
   },
   "options": {
     "step": {
       "init": {
         "menu_options": {
-          "cover_entities": "Entités de store",
-          "geometry": "Géométrie de fenêtre",
-          "sun_tracking": "Suivi solaire",
+          "cover_entities": "Entités de volets",
+          "geometry": "Géométrie du volet",
+          "sun_tracking": "Suivi du soleil",
           "position": "Paramètres de position",
           "blind_spot": "Angle mort",
           "glare_zones": "Zones d'éblouissement",
-          "interp": "Étalonnage de position",
-          "automation": "Planning et minuterie",
+          "interp": "Calibration de position",
+          "automation": "Automatisation et horaires",
           "climate": "Configuration climatique",
           "weather": "Conditions météorologiques",
-          "manual_override": "Priorité manuelle",
-          "force_override": "Priorité forcée",
+          "manual_override": "Forçage manuel",
+          "force_override": "Forçage par contrainte",
           "custom_position": "Positions personnalisées",
-          "motion_override": "Priorité mouvement",
-          "weather_override": "Priorité météo",
+          "motion_override": "Forçage par présence",
+          "weather_override": "Forçage météo",
           "device": "Association d'appareil",
-          "summary": "Résumé de la configuration",
-          "sync": "Copier vers d'autres stores",
-          "done": "Enregistrer et fermer",
+          "summary": "Résumé de configuration",
+          "sync": "Copier les paramètres vers d'autres volets",
+          "done": "Enregistrer et quitter",
           "light_cloud": "Capteurs de lumière et nuages",
-          "temperature_climate": "Température et climat"
+          "temperature_climate": "Température et mode climatique"
         }
       },
       "automation": {
-        "title": "Planning et minuterie",
-        "description": "Configurez la minuterie d'automatisation, les seuils de changement de position et les heures de fonctionnement.",
+        "title": "Automatisation et horaires",
+        "description": "Configurer les horaires, les seuils de changement de position et les heures actives pour le contrôle automatique.",
         "data": {
-          "delta_position": "Ajustement de position minimal",
-          "delta_time": "Intervalle minimal entre changements de position",
+          "delta_position": "Écart minimal de position",
+          "delta_time": "Intervalle de temps minimum entre deux changements de position",
           "start_time": "Heure de début",
           "start_entity": "Entité indiquant l'heure de début",
           "end_time": "Heure de fin",
           "end_entity": "Entité indiquant l'heure de fin",
-          "return_sunset": "Déplacer les stores vers la position par défaut actuelle à l'heure de fin"
+          "return_sunset": "Envoyer les volets à la position par défaut effective à l'heure de fin"
         },
         "data_description": {
-          "delta_position": "Changement de position minimal (%) avant ajustement. Typique : 1–2% (très réactif), 5% (équilibré, recommandé), 10% (moins fréquent). Réduit l'usure du moteur.",
-          "delta_time": "Délai minimal (minutes) entre ajustements. Typique : 2–3 min (très réactif), 5–10 min (équilibré, recommandé), 15–20 min (lent). Minimum : 2 minutes.",
-          "start_time": "Ne pas démarrer avant cette heure (format 24h). Laisser vide pour démarrer au lever du soleil.",
-          "start_entity": "Entité dont l'état remplace l'heure de début fixe ci-dessus.",
-          "end_time": "Arrêter après cette heure (format 24h). Laisser vide pour continuer jusqu'au coucher du soleil.",
-          "end_entity": "Entité dont l'état remplace l'heure de fin fixe ci-dessus.",
-          "return_sunset": "À l'heure de fin opérationnelle, envoyer les stores vers la position par défaut effective actuelle."
+          "delta_position": "Changement de position minimum requis avant d'ajuster la position du volet",
+          "delta_time": "Intervalle de temps minimum entre les changements de position ; le minimum est de 2 minutes",
+          "start_time": "Heure de début pour chaque jour ; avant cette heure, le volet restera stationnaire",
+          "start_entity": "Entité représentant l'état de l'heure de début, remplaçant l'heure de début fixe définie ci-dessus. Utile pour automatiser l'heure de début avec une entité",
+          "end_time": "Heure de fin pour chaque jour ; après cette heure, le volet restera stationnaire",
+          "end_entity": "Entité représentant l'état de l'heure de fin, remplaçant l'heure de fin fixe définie ci-dessus. Utile pour automatiser l'heure de fin avec une entité",
+          "return_sunset": "Lorsque l'heure de fin est atteinte, envoyer les volets à la position par défaut effective (position de coucher de soleil si celui-ci est déjà passé, sinon position par défaut normale). Utile si votre heure de fin est avant le coucher du soleil et que vous souhaitez que les volets soient correctement positionnés pour la soirée."
         }
       },
       "cover_entities": {
-        "title": "Entités de store",
-        "description": "Sélectionnez les entités de store que cette instance va contrôler.",
+        "title": "Entités de volets",
+        "description": "Sélectionner les entités de volets que cette instance contrôlera.",
         "data": {
-          "group": "Entités de store"
+          "group": "Entités de volets"
         },
         "data_description": {
-          "group": "Sélectionnez les entités de store à contrôler. Plusieurs stores peuvent être sélectionnés en groupe. Ne sélectionnez que les stores pour cette fenêtre — créez des instances séparées pour d'autres fenêtres."
+          "group": "Sélectionner les entités à contrôler via l'intégration"
         }
       },
       "geometry": {
-        "title": "Géométrie du store",
-        "description": "Configurez les dimensions du store.",
+        "title": "Géométrie du volet",
+        "description": "Configurer les dimensions du volet.",
         "data": {
-          "window_height": "Hauteur de fenêtre",
+          "window_height": "Hauteur de la fenêtre",
           "distance_shaded_area": "Zone ombrée",
-          "window_depth": "Profondeur de fenêtre (tableau)",
-          "sill_height": "Hauteur d'appui de fenêtre",
+          "window_depth": "Profondeur de l'embrasure de la fenêtre",
+          "sill_height": "Hauteur du rebord inférieur",
           "window_width": "Largeur de fenêtre",
-          "length_awning": "Longueur de projection du store banne",
-          "angle": "Angle du store banne",
-          "slat_depth": "Largeur de lame",
-          "slat_distance": "Espacement des lames"
+          "length_awning": "Longueur d'envergure du auvent",
+          "angle": "Angle du auvent",
+          "slat_depth": "Profondeur des lamelles",
+          "slat_distance": "Espacement des lamelles"
         },
         "data_description": {
-          "window_height": "Hauteur de la fenêtre en mètres. Note : 1 mètre ≈ 3,3 pieds.",
-          "distance_shaded_area": "Profondeur de pénétration solaire acceptée (mètres). PLUS GRAND = store PLUS OUVERT ; PLUS PETIT = store PLUS FERMÉ.",
-          "window_depth": "Profondeur du tableau depuis la surface du mur (mètres). Par défaut : 0. N'affecte qu'aux angles > 10°.",
-          "sill_height": "Hauteur du sol jusqu'au bas de la fenêtre (mètres). Par défaut : 0. Plage : 0,0–3,0 m.",
-          "window_width": "Largeur de l'ouverture en cm. Utilisée par les zones d'éblouissement.",
-          "length_awning": "Longueur de projection maximale en mètres (entièrement déployé).",
-          "angle": "Angle du store banne déployé (0–45°). La plupart des stores : 0–15°.",
-          "slat_depth": "Largeur d'une lame (avant vers arrière).",
-          "slat_distance": "Espacement vertical entre centres de lames. Typique : 3–8 cm."
+          "window_height": "Spécifier la hauteur de la fenêtre en mètres",
+          "distance_shaded_area": "Distance entre le volet et la zone ombragée en mètres",
+          "window_depth": "Profondeur de l'embrasure de la fenêtre à partir de la surface du mur (en mètres). Paramètre optionnel pour une précision avancée. Mettre 0 (valeur par défaut) pour désactiver. Valeurs typiques : pose affleurante = 0,05 m, cadre standard = 0,10 m, embrasure profonde = 0,15 m. Une plus grande profondeur offre un ombrage supplémentaire lorsque le soleil est incliné. Mesurer depuis la surface extérieure du mur jusqu'au bord intérieur du cadre de la fenêtre. N'affecte les calculs qu'au-delà de 10° d'élévation.",
+          "sill_height": "Hauteur entre le sol et le bas de la fenêtre (en mètres). Mettre 0 (valeur par défaut) pour une fenêtre au niveau du sol ou si la valeur est inconnue. Pour une fenêtre dont le bas est à 1 m du sol, saisir 1,0. Améliore la précision des calculs pour les fenêtres surélevées — sans cela, le volet se ferme légèrement plus que nécessaire. Plage : 0,0–3,0 m. Mesurer du sol jusqu'au bord inférieur de la zone vitrée (le seuil). Remarque : la hauteur de fenêtre (h_win) reste mesurée du bas au haut du vitrage — ce sont des mesures indépendantes.",
+          "window_width": "Largeur de l'ouverture de fenêtre en cm. Utilisée par les zones d'éblouissement.",
+          "length_awning": "Longueur totale de l'envergure de l'auvent en mètres",
+          "angle": "Angle de l'auvent mesuré perpendiculairement du mur vers le sol",
+          "slat_depth": "Profondeur de chaque lame individuelle en centimètres",
+          "slat_distance": "Distance verticale entre deux lames en centimètres"
         }
       },
       "sun_tracking": {
-        "title": "Suivi solaire",
-        "description": "Configurez l'orientation de la fenêtre et les angles de suivi solaire.",
+        "title": "Suivi du soleil",
+        "description": "Configurer l'orientation de la fenêtre et les angles de suivi solaire.",
         "data": {
           "set_azimuth": "Azimut de la fenêtre",
           "fov_left": "Champ de vision gauche",
           "fov_right": "Champ de vision droit",
-          "min_elevation": "Élévation solaire minimale",
-          "max_elevation": "Élévation solaire maximale",
+          "min_elevation": "Élévation minimale du soleil",
+          "max_elevation": "Élévation maximale du soleil",
           "blind_spot": "Configurer l'angle mort",
           "enable_glare_zones": "Activer les zones d'éblouissement",
           "distance_shaded_area": "Zone ombrée"
         },
         "data_description": {
-          "set_azimuth": "Orientation de la fenêtre (0–359°). Nord=0°, Est=90°, Sud=180°, Ouest=270°.",
-          "fov_left": "Zone de suivi côté gauche (degrés). Fenêtre standard : 45°.",
-          "fov_right": "Zone de suivi côté droit (degrés). Fenêtre standard : 45°.",
-          "min_elevation": "Suivi uniquement si l'élévation est AU-DESSUS de cet angle. Laisser vide pour tous les angles.",
-          "max_elevation": "Suivi uniquement si l'élévation est EN-DESSOUS de cet angle. Laisser vide pour tous les angles.",
-          "blind_spot": "Activer si des obstacles bloquent le soleil dans une partie du champ de vision.",
-          "enable_glare_zones": "Protéger des zones de sol contre l'éblouissement (stores verticaux uniquement)",
-          "distance_shaded_area": "Profondeur de pénétration solaire acceptée (mètres). PLUS GRAND = store PLUS OUVERT ; PLUS PETIT = store PLUS FERMÉ."
+          "set_azimuth": "Ajuster l'azimut",
+          "fov_left": "Angle du champ de vision à gauche du centre de la fenêtre",
+          "fov_right": "Angle du champ de vision à droite du centre de la fenêtre",
+          "min_elevation": "Suivre le soleil uniquement lorsque l'élévation est AU-DESSUS de cet angle (en degrés au-dessus de l'horizon). Élévation solaire : 0° = horizon, 45° = mi-chemin vers le zénith, 90° = directement au-dessus. Utiliser ce paramètre pour ignorer le soleil à certains moments. Exemple : régler à 15° pour ignorer le soleil bas du matin ou du soir. Laisser vide pour suivre le soleil à toutes les élévations.",
+          "max_elevation": "Suivre le soleil uniquement lorsque l'élévation est EN DESSOUS de cet angle (en degrés au-dessus de l'horizon). Élévation solaire : 0° = horizon, 45° = mi-chemin vers le zénith, 90° = directement au-dessus. Utiliser ce paramètre pour ignorer le soleil à certains moments. Exemple : régler à 60° pour ignorer le soleil très haut de midi. Laisser vide pour suivre le soleil à toutes les élévations.",
+          "blind_spot": "Activer si des obstacles bloquent le soleil dans une partie de la zone de suivi (arbres, bâtiments proches, avancée de toit, balcon). Lorsqu'activé, vous définissez une plage azimut + élévation où le soleil est bloqué. Le volet ignore alors la position du soleil lorsqu'il se trouve dans cet « angle mort ». Laisser désactivé si la vue sur le soleil est dégagée toute la journée.",
+          "enable_glare_zones": "Protéger des zones spécifiques du sol contre l'éblouissement direct (volets verticaux uniquement)",
+          "distance_shaded_area": "Distance maximale jusqu'à laquelle vous acceptez que la lumière directe pénètre dans la pièce (en mètres). VALEUR PLUS GRANDE = plus de soleil = volet PLUS HAUT/OUVERT ; VALEUR PLUS PETITE = moins de soleil = volet PLUS BAS/FERMÉ."
         }
       },
       "position": {
         "title": "Paramètres de position",
-        "description": "Configurez les limites de position, les valeurs par défaut et le comportement au coucher du soleil.",
+        "description": "Configurer les limites de position du volet, les valeurs par défaut et le comportement au coucher du soleil.",
         "data": {
           "default_percentage": "Position par défaut",
           "max_position": "Position maximale",
-          "enable_max_position": "Appliquer le maximum uniquement pendant le suivi solaire",
+          "enable_max_position": "Forcer la position maximale uniquement lorsque le soleil est devant la fenêtre",
           "min_position": "Position minimale",
-          "enable_min_position": "Appliquer le minimum uniquement pendant le suivi solaire",
-          "sunset_position": "Position au coucher du soleil",
-          "sunset_offset": "Décalage coucher du soleil",
-          "sunrise_offset": "Décalage lever du soleil",
+          "enable_min_position": "Forcer la position minimale uniquement lorsque le soleil est devant la fenêtre",
+          "sunset_position": "Position du coucher de soleil",
+          "sunset_offset": "Décalage du coucher du soleil",
+          "sunrise_offset": "Décalage du lever du soleil",
           "open_close_threshold": "Seuil d'ouverture/fermeture",
-          "inverse_state": "Inverser l'état (nécessaire pour certains stores ne respectant pas les directives HA)",
-          "interp": "Activer l'étalonnage de position (mappage personnalisé ouverture/fermeture)"
+          "inverse_state": "Inverser l'état (nécessaire pour certains volets qui ne suivent pas les directives HA)",
+          "interp": "Définir des positions d'ouverture/fermeture personnalisées pour le volet si celui-ci ne fonctionne pas correctement sur 0–100 %"
         },
         "data_description": {
-          "default_percentage": "Position de repos sans suivi solaire actif (0–100%). 0% = fermé, 100% = ouvert.",
-          "max_position": "Limite maximale de position (0–100%). Le store ne dépassera jamais cette valeur.",
-          "enable_max_position": "DÉCOCHÉ (défaut) : le maximum s'applique toujours. COCHÉ (avancé) : le maximum s'applique uniquement lors du suivi solaire direct.",
-          "min_position": "Limite minimale de position (0–99%). Le store ne descendra jamais en dessous de cette valeur.",
-          "enable_min_position": "DÉCOCHÉ (défaut) : le minimum s'applique toujours. COCHÉ (avancé) : le minimum s'applique uniquement lors du suivi solaire direct.",
-          "sunset_position": "Position après le coucher du soleil. Laisser vide pour utiliser la position par défaut. 0% = fermé, 100% = ouvert.",
-          "sunset_offset": "Décalage de l'heure du coucher (± minutes). Positif = après le coucher, Négatif = avant le coucher.",
-          "sunrise_offset": "Décalage de l'heure du lever (± minutes). Positif = après le lever, Négatif = avant le lever.",
-          "open_close_threshold": "Seuil pour les stores sans contrôle de position. Au-dessus : ouverture ; en-dessous : fermeture. Par défaut : 50%.",
-          "inverse_state": "Activer pour les stores à logique de position inversée. Uniquement si 100% ferme au lieu d'ouvrir.",
-          "interp": "Activer le mappage personnalisé. Une section 'Étalonnage de position' apparaîtra dans le menu des options."
+          "default_percentage": "Position par défaut du volet en pourcentage",
+          "max_position": "Position maximale réglable du volet en pourcentage",
+          "enable_max_position": "Définit QUAND la limite de position maximale s'applique. NON COCHÉ (par défaut, recommandé) : la position maximale s'applique TOUT LE TEMPS — pendant le suivi solaire, la position par défaut, les modes climatiques, etc. Le volet ne dépasse jamais cette valeur maximale. COCHÉ (avancé) : la position maximale ne s'applique QUE lorsque le soleil est directement en face de la fenêtre. En mode par défaut ou de secours, le volet peut dépasser cette valeur. La plupart des utilisateurs devraient laisser cette option NON COCHÉE pour une protection cohérente.",
+          "min_position": "Position minimale réglable du volet en pourcentage",
+          "enable_min_position": "Définit QUAND la limite de position minimale s'applique. NON COCHÉ (par défaut, recommandé) : la position minimale s'applique TOUT LE TEMPS — pendant le suivi solaire, la position par défaut, les modes climatiques, etc. Le volet ne descend jamais en dessous de cette valeur. COCHÉ (avancé) : la position minimale ne s'applique QUE lorsque le soleil est directement en face de la fenêtre. En mode par défaut ou de secours, le volet peut descendre en dessous de cette valeur. La plupart des utilisateurs devraient laisser cette option NON COCHÉE pour une protection cohérente.",
+          "sunset_position": "Position appliquée après le coucher du soleil",
+          "sunset_offset": "Décalage (±) en minutes par rapport à l'heure du coucher du soleil",
+          "sunrise_offset": "Décalage (±) en minutes par rapport à l'heure du lever du soleil",
+          "open_close_threshold": "Seuil de position pour les volets ne supportant que les commandes ouvrir/fermer (sans contrôle de position). Lorsque la position calculée est supérieure ou égale à ce seuil, le volet s'ouvre ; en dessous, il se ferme. Valeur par défaut : 50 % (s'ouvre à partir du milieu). Une valeur plus élevée (60–70 %) garde le volet fermé plus souvent ; une valeur plus basse (30–40 %) l'ouvre plus souvent. N'affecte que les volets sans contrôle de position — les volets à position gérée ignorent ce paramètre et utilisent la position exacte calculée.",
+          "inverse_state": "Activer pour les volets dont la logique de position est inversée. Standard : 0 = fermé/abaissé, 100 = ouvert/levé. Inversé : 0 = ouvert/levé, 100 = fermé/abaissé. À activer UNIQUEMENT si votre volet se comporte à l'inverse (ex. : 100 % ferme au lieu d'ouvrir) ou si la documentation indique « inversé » ou « reversed ». Tester manuellement avant d'activer. La plupart des volets n'en ont pas besoin.",
+          "interp": "Activer le mappage personnalisé de position pour calibrer les volets qui ne réagissent pas de manière linéaire aux commandes 0–100 %. Lorsqu'activé, une section « Calibration de position » apparaît dans le menu des options pour configurer les valeurs de mappage. Cas d'usage : mouvement non linéaire, préférences de plage, comportement atypique du volet. Laisser désactivé pour un fonctionnement normal."
         }
       },
       "manual_override": {
-        "title": "Priorité manuelle",
-        "description": "Configurez l'interaction entre les changements manuels et le contrôle automatique.",
+        "title": "Forçage manuel",
+        "description": "Configurer la manière dont les changements manuels de position interagissent avec le contrôle automatique.",
         "data": {
-          "manual_override_duration": "Durée de la priorité manuelle",
-          "manual_override_reset": "Réinitialiser le minuteur de priorité manuelle",
-          "manual_threshold": "Seuil de priorité manuelle",
-          "manual_ignore_intermediate": "Ignorer les positions intermédiaires lors de la priorité manuelle"
+          "manual_override_duration": "Durée du forçage manuel",
+          "manual_override_reset": "Réinitialiser la durée du forçage manuel",
+          "manual_threshold": "Seuil de forçage manuel",
+          "manual_ignore_intermediate": "Ignorer les positions intermédiaires pendant le forçage manuel (ouverture et fermeture)"
         },
         "data_description": {
-          "manual_override_duration": "Durée de pause (minutes) après un ajustement manuel. Typique : 10–15 min (court), 30 min (moyen), 60–120 min (long), 0 (désactivé).",
-          "manual_override_reset": "Réinitialiser le minuteur après chaque ajustement. Activé : chaque modification repart le minuteur. Désactivé : uniquement pour le premier ajustement.",
-          "manual_threshold": "Différence de position (%) pour détecter une priorité manuelle (défaut : 1%). Typique : 1–2% (sensible), 5% (recommandé), 10% (grandes modifications).",
-          "manual_ignore_intermediate": "Ignorer les positions de transition pendant les déplacements. Évite les faux déclenchements."
+          "manual_override_duration": "Durée du contrôle manuel avant retour au contrôle automatique",
+          "manual_override_reset": "Option permettant de réinitialiser la durée de forçage manuel après chaque ajustement manuel ; si désactivée, la durée ne s'applique qu'au premier ajustement",
+          "manual_threshold": "Différence de position (%) considérée comme un « forçage manuel » (par défaut : 1 %). Si vous déplacez manuellement le volet d'au moins cette valeur, la détection de forçage s'active. Valeurs typiques : 1–2 % (très sensible), 5 % (recommandé), 10 % (ne détecte que les grands changements). Évite les déclenchements accidentels dus aux micro-variations du moteur ou du retour d'état.",
+          "manual_ignore_intermediate": "Ignorer les positions intermédiaires pendant les mouvements manuels. Utile si votre volet envoie de nombreuses valeurs intermédiaires pendant son déplacement, afin d'éviter des détections de forçage intempestives."
         }
       },
       "force_override": {
-        "title": "Priorité forcée",
-        "description": "Capteurs binaires remplaçant inconditionnellement le contrôle automatique. Reste actif même si le contrôle automatique est désactivé.",
+        "title": "Forçage par contrainte",
+        "description": "Configurer des capteurs binaires qui forcent inconditionnellement les volets à une position fixe.",
         "data": {
-          "force_override_sensors": "Capteurs de priorité forcée",
-          "force_override_position": "Position de priorité forcée"
+          "force_override_sensors": "Capteurs de forçage par contrainte",
+          "force_override_position": "Position de forçage par contrainte"
         },
         "data_description": {
-          "force_override_sensors": "Lors de l'activation, tous les stores vont vers la position configurée, quelle que soit la configuration. Laisser vide pour désactiver.",
-          "force_override_position": "Position (0–100%) lors de la priorité forcée. 0% = fermé (store baissé / banne rétractée), 100% = ouvert. Par défaut : 0%."
+          "force_override_sensors": "Capteurs binaires qui forcent les volets à la position configurée lorsqu'ils sont actifs. Si AU MOINS un capteur est à 'on', TOUS les volets se déplacent vers la position définie, quels que soient les autres réglages. Le contrôle manuel reste possible. Laisser vide pour désactiver cette fonctionnalité.",
+          "force_override_position": "Position (0–100 %) appliquée lorsque les capteurs de forçage par contrainte sont actifs. 0 % = totalement fermé/rétracté, 100 % = totalement ouvert. Valeur par défaut : 0 %."
         }
       },
       "custom_position": {
         "title": "Positions personnalisées",
-        "description": "Capteurs binaires plaçant le store à des positions spécifiques lors de leur activation. Le slot actif à la priorité la plus haute gagne.",
+        "description": "Configurer des capteurs binaires qui définissent des positions spécifiques du volet lorsqu'ils sont actifs. Chaque capteur possède sa propre position cible — le slot actif ayant la priorité la plus haute gagne.",
         "data": {
           "custom_position_sensor_1": "Capteur 1",
           "custom_position_1": "Position pour le capteur 1",
@@ -610,35 +610,35 @@
           "custom_position_priority_4": "Priorité pour le slot 4"
         },
         "data_description": {
-          "custom_position_sensor_1": "Capteur binaire déplaçant le store vers la position configurée à l'activation. Laisser vide pour ignorer.",
-          "custom_position_1": "Position (0–100%) pour le capteur 1. 0% = fermé, 100% = ouvert.",
-          "custom_position_priority_1": "Priorité dans le pipeline (1–99, défaut 77). Entre Priorité manuelle (80) et Délai mouvement (75).",
-          "custom_position_sensor_2": "Capteur binaire pour le slot 2. Laisser vide pour ignorer.",
-          "custom_position_2": "Position (0–100%) pour le capteur 2.",
-          "custom_position_priority_2": "Priorité dans le pipeline pour le slot 2 (1–99, défaut 77).",
-          "custom_position_sensor_3": "Capteur binaire pour le slot 3. Laisser vide pour ignorer.",
-          "custom_position_3": "Position (0–100%) pour le capteur 3.",
-          "custom_position_priority_3": "Priorité dans le pipeline pour le slot 3 (1–99, défaut 77).",
-          "custom_position_sensor_4": "Capteur binaire pour le slot 4. Laisser vide pour ignorer.",
-          "custom_position_4": "Position (0–100%) pour le capteur 4.",
-          "custom_position_priority_4": "Priorité dans le pipeline pour le slot 4 (1–99, défaut 77)."
+          "custom_position_sensor_1": "Capteur binaire qui, lorsqu'il est à 'on', déplace le volet vers sa position configurée. Les capteurs sont évalués par priorité — le plus haut l'emporte. Laisser vide pour ignorer cet emplacement.",
+          "custom_position_1": "Position (0–100 %) appliquée lorsque le capteur 1 est actif. 0 % = fermé (volet baissé / auvent rétracté), 100 % = ouvert (volet levé / auvent déployé). Valeur par défaut : 0 %.",
+          "custom_position_priority_1": "Priorité dans le pipeline (1–99). Plus élevée = évaluée en premier. Par défaut 77, entre Forçage manuel (80) et Temporisation de mouvement (75).",
+          "custom_position_sensor_2": "Capteur binaire pour l'emplacement 2. Laisser vide pour ignorer.",
+          "custom_position_2": "Position (0–100 %) appliquée lorsque le capteur 2 est actif. 0 % = fermé, 100 % = ouvert. Valeur par défaut : 0 %.",
+          "custom_position_priority_2": "Priorité dans le pipeline pour le slot 2 (1–99, par défaut 77).",
+          "custom_position_sensor_3": "Capteur binaire pour l'emplacement 3. Laisser vide pour ignorer.",
+          "custom_position_3": "Position (0–100 %) appliquée lorsque le capteur 3 est actif. Valeur par défaut : 0 %.",
+          "custom_position_priority_3": "Priorité dans le pipeline pour le slot 3 (1–99, par défaut 77).",
+          "custom_position_sensor_4": "Capteur binaire pour l'emplacement 4. Laisser vide pour ignorer.",
+          "custom_position_4": "Position (0–100 %) appliquée lorsque le capteur 4 est actif. Valeur par défaut : 0 %.",
+          "custom_position_priority_4": "Priorité dans le pipeline pour le slot 4 (1–99, par défaut 77)."
         }
       },
       "motion_override": {
-        "title": "Priorité mouvement",
-        "description": "Capteurs de mouvement et d'occupation pour le contrôle automatique basé sur la présence.",
+        "title": "Forçage par présence",
+        "description": "Configurer les capteurs de mouvement et de présence pour un contrôle automatique basé sur l'occupation.",
         "data": {
-          "motion_sensors": "Capteurs de mouvement/occupation",
-          "motion_timeout": "Délai d'expiration mouvement"
+          "motion_sensors": "Capteurs de mouvement / présence",
+          "motion_timeout": "Durée de temporisation"
         },
         "data_description": {
-          "motion_sensors": "Capteurs binaires pour le contrôle basé sur la présence. Laisser vide pour désactiver.",
-          "motion_timeout": "Délai d'attente (secondes) après le dernier mouvement. Plage : 30–3600 secondes. Par défaut : 300 secondes (5 minutes)."
+          "motion_sensors": "Capteurs binaires permettant d'activer ou désactiver le positionnement solaire automatique selon la présence. Lorsqu'AUCUN capteur ne détecte de mouvement pendant la durée de temporisation, les volets reviennent à la position par défaut. Laisser vide pour désactiver cette fonctionnalité.",
+          "motion_timeout": "Durée (en secondes) à attendre après le dernier mouvement avant de renvoyer les volets à la position par défaut. Évite les changements rapides lorsque les capteurs basculent fréquemment. Plage : 30–3600 secondes (0,5-60 minutes). Valeur par défaut : 300 secondes (5 minutes)."
         }
       },
       "weather_override": {
-        "title": "Priorité météo",
-        "description": "Priorités de sécurité basées sur la météo. Chaque condition configurée déclenche la rétraction.",
+        "title": "Forçage météo",
+        "description": "Configurez des priorités de sécurité basées sur la météo. Toute condition configurée déclenche la rétraction des volets. Les entrées non configurées sont ignorées.",
         "data": {
           "weather_bypass_auto_control": "Actif lorsque le contrôle automatique est désactivé",
           "weather_wind_speed_sensor": "Capteur de vitesse du vent",
@@ -670,42 +670,42 @@
       },
       "climate": {
         "title": "Configuration climatique",
-        "description": "Contrôle éco-énergétique et confortable en fonction du climat.",
+        "description": "Ajouter des variables de configuration climatique supplémentaires.",
         "data": {
-          "weather_entity": "Entité météo (optionnel)",
-          "lux_entity": "Capteur de luminosité (optionnel)",
-          "lux_threshold": "Seuil de luminosité",
+          "weather_entity": "Entité météo (optionnelle)",
+          "lux_entity": "Capteur de luminosité (lux) (optionnel)",
+          "lux_threshold": "Seuil de luminosité (lux)",
           "irradiance_entity": "Capteur d'irradiance (optionnel)",
           "irradiance_threshold": "Seuil d'irradiance",
           "cloud_coverage_entity": "Capteur de couverture nuageuse (optionnel)",
           "cloud_coverage_threshold": "Seuil de couverture nuageuse",
           "cloud_suppression": "Supprimer le contrôle anti-éblouissement par faible luminosité",
           "climate_mode": "Activer le mode climatique",
-          "temp_entity": "Capteur de température intérieure",
+          "temp_entity": "Entité de température intérieure",
           "temp_low": "Seuil de température basse",
           "temp_high": "Seuil de température haute",
           "outside_temp": "Capteur de température extérieure (optionnel)",
-          "presence_entity": "Entité de présence (optionnel)",
-          "transparent_blind": "Store transparent",
+          "presence_entity": "Entité de présence (optionnelle)",
+          "transparent_blind": "Volet transparent",
           "winter_close_insulation": "Mode isolation hivernal"
         },
         "data_description": {
-          "weather_entity": "Intégration météo optionnelle. Laisser vide pour supposer toujours ensoleillé.",
-          "lux_entity": "Capteur de luminosité optionnel. Laisser vide si indisponible.",
-          "lux_threshold": "Seuil de luminosité pour 'ensoleillé'. Typique : 5000–10000 lux.",
-          "irradiance_entity": "Capteur d'irradiance optionnel (W/m²). Laisser vide si indisponible.",
-          "irradiance_threshold": "Seuil d'irradiance pour 'ensoleillé'. Typique : 300–500 W/m².",
-          "cloud_coverage_entity": "Capteur de couverture nuageuse optionnel (0–100%). Laisser vide si indisponible.",
-          "cloud_coverage_threshold": "Couverture nuageuse supprimant l'anti-éblouissement. Par défaut : 75%.",
-          "cloud_suppression": "Supprimer l'anti-éblouissement si absence de soleil direct détectée. Fonctionne sans mode climatique.",
-          "climate_mode": "Activer les stratégies basées sur la température. Nécessite un capteur de température intérieure.",
-          "temp_entity": "Capteur de température pour le mode climatique (intérieur recommandé).",
-          "temp_low": "Seuil MODE HIVERNAL. En dessous : ouverture complète par soleil. Recommandé : 18–20°C.",
-          "temp_high": "Seuil MODE ESTIVAL. Au-dessus : fermeture complète. Recommandé : 23–25°C.",
-          "outside_temp": "Capteur de température extérieure optionnel. Le mode estival nécessite alors les deux seuils.",
-          "presence_entity": "Capteur de présence optionnel. Types : device_tracker, person, zone, binary_sensor.",
-          "transparent_blind": "Pour stores translucides (voile). Fermeture à 0% en été.",
-          "winter_close_insulation": "Fermer en hiver sans soleil — pour l'isolation."
+          "weather_entity": "Surveille les conditions météorologiques et la température extérieure",
+          "lux_entity": "Utilisé pour déterminer si le volet doit réduire l'éblouissement en mode présence",
+          "lux_threshold": "Seuil de luminosité au-dessus duquel l'éblouissement doit être réduit",
+          "irradiance_entity": "Utilisé pour déterminer si le volet doit réduire l'éblouissement en mode présence",
+          "irradiance_threshold": "Seuil d'irradiance au-dessus duquel l'éblouissement doit être réduit",
+          "cloud_coverage_entity": "Capteur de couverture nuageuse optionnel (0–100%). Au-delà du seuil, le contrôle anti-éblouissement est supprimé. Laisser vide si indisponible.",
+          "cloud_coverage_threshold": "Pourcentage de couverture nuageuse supprimant le contrôle anti-éblouissement. Exemple : 75 = 75% nuageux = couvert. Par défaut : 75%.",
+          "cloud_suppression": "Supprime le contrôle anti-éblouissement lorsque la météo, le lux, l'irradiance ou la couverture nuageuse indiquent l'absence de soleil direct. Ne nécessite pas le mode climatique.",
+          "climate_mode": "Activer les stratégies basées sur la température. Activé : le comportement s'adapte à la température intérieure — ouverture complète en hiver pour capter la chaleur, fermeture complète en été contre la surchauffe. Nécessite un capteur de température intérieure.",
+          "temp_entity": "Capteur de température pour le mode climatique (intérieur recommandé). Les unités doivent correspondre au système Home Assistant (°C ou °F).",
+          "temp_low": "Température minimale de confort",
+          "temp_high": "Température maximale de confort",
+          "outside_temp": "Remplace la température extérieure de l'entité météo si les deux sont définies",
+          "presence_entity": "Entité représentant l'état de présence de la pièce ou de la maison",
+          "transparent_blind": "Le store est transparent et doit toujours se fermer complètement lorsque le mode été est actif",
+          "winter_close_insulation": "Fermer les volets en hiver lorsque le soleil n'est pas face à la fenêtre. Assure l'isolation en maintenant l'air froid à l'extérieur. Lorsque le soleil entre dans le champ de vision, les volets s'ouvrent normalement."
         }
       },
       "weather": {
@@ -714,37 +714,37 @@
           "weather_state": "Conditions météorologiques"
         },
         "data_description": {
-          "weather_state": "États météo signifiant 'soleil présent'. Recommandé : ☑ sunny, ☑ partlycloudy, ☐ cloudy, ☐ clear."
+          "weather_state": "Choisir les conditions météorologiques permettant le contrôle automatique des volets."
         }
       },
       "blind_spot": {
         "title": "Angle mort",
-        "description": "Définissez des zones où des obstacles bloquent le soleil. Les valeurs sont des degrés relatifs dans le champ de vision.",
+        "description": "Configurer l'angle mort du volet. Les valeurs sont exprimées en degrés relatifs au champ de vision.",
         "data": {
-          "blind_spot_left": "Début gauche de l'angle mort",
-          "blind_spot_right": "Fin droite de l'angle mort",
-          "blind_spot_elevation": "Élévation de l'angle mort"
+          "blind_spot_left": "Début angle mort gauche",
+          "blind_spot_right": "Fin angle mort droit",
+          "blind_spot_elevation": "Élévation angle mort"
         },
         "data_description": {
-          "blind_spot_left": "Bord gauche (degrés depuis la limite gauche du champ de vision). Exemple : champ gauche = 45°, arbre 10–20° → saisir 10.",
-          "blind_spot_right": "Bord droit (degrés depuis la limite gauche, > bord gauche). Exemple : saisir 20.",
-          "blind_spot_elevation": "Élévation maximale où l'angle mort s'applique. Exemple : 30° pour avant-toit bloquant le soleil bas."
+          "blind_spot_left": "Bord gauche de l'angle mort",
+          "blind_spot_right": "Bord droit de l'angle mort",
+          "blind_spot_elevation": "Toute valeur égale ou inférieure est incluse dans l'angle mort. Utile si un obstacle peut refléter ou bloquer le soleil."
         }
       },
       "interp": {
-        "title": "Étalonnage de position",
-        "description": "Mappage de position pour un comportement non standard. Non nécessaire pour la plupart des stores.",
+        "title": "Calibration de position",
+        "description": "Ajuster les valeurs auxquelles votre volet s'ouvre ou se ferme efficacement. Idéal pour les volets non linéaires.",
         "data": {
-          "interp_start": "Valeur de début d'ouverture",
-          "interp_end": "Valeur de début de fermeture",
+          "interp_start": "Valeur où commence l'ouverture",
+          "interp_end": "Valeur où commence la fermeture",
           "interp_list": "Liste d'interpolation",
           "interp_list_new": "Liste d'interpolation personnalisée"
         },
         "data_description": {
-          "interp_start": "Valeur à partir de laquelle le store commence à s'ouvrir. Exemple : 10 si le mouvement démarre à 10%.",
-          "interp_end": "Valeur à laquelle le store est complètement ouvert. Exemple : 90 si complètement ouvert à 90%.",
-          "interp_list": "Positions d'entrée (valeurs calculées, ex. : 0, 25, 50, 75, 100). Même longueur que la liste personnalisée.",
-          "interp_list_new": "Positions de sortie (valeurs réelles, ex. : 0, 20, 40, 65, 100). Même longueur que la liste d'interpolation."
+          "interp_start": "Valeur de position à partir de laquelle le volet commence à s'ouvrir (étalonnage 2 points simple). Exemple : si le volet ne commence à bouger qu'à 10%, saisir 10.",
+          "interp_end": "Valeur de position à laquelle le volet est complètement ouvert (étalonnage 2 points simple). Exemple : si le volet est complètement ouvert à 90%, saisir 90.",
+          "interp_list": "Liste de valeurs d'interpolation (0 = fermé, 100 = ouvert)",
+          "interp_list_new": "Plage personnalisée d'interpolation (début = fermé, fin = ouvert)"
         }
       },
       "glare_zones": {
@@ -770,7 +770,7 @@
           "glare_zone_4_radius": "Rayon zone 4"
         },
         "data_description": {
-          "enable_glare_zones": "Le store descend pour ombrager toutes les zones actives.",
+          "enable_glare_zones": "Le volet descend pour ombrager toutes les zones actives.",
           "glare_zone_1_name": "Nom de la zone (ex. 'Bureau'). Vide = ignorer.",
           "glare_zone_1_x": "Décalage depuis le centre de fenêtre en cm. Positif = droite.",
           "glare_zone_1_y": "Distance dans la pièce en cm.",
@@ -791,35 +791,35 @@
       },
       "device": {
         "title": "Association d'appareil",
-        "description": "Associez les entités de cette intégration à un appareil existant ou supprimez une association existante.",
+        "description": "Associer les entités de cette intégration à un appareil existant (ex. : moteur de volet) ou supprimer une association existante.",
         "data": {
-          "linked_device_id": "Associer à l'appareil"
+          "linked_device_id": "Associer à un appareil"
         },
         "data_description": {
-          "linked_device_id": "Sélectionnez un appareil physique pour la fusion. Sélectionner 'Aucun (appareil indépendant)' pour un appareil virtuel séparé."
+          "linked_device_id": "Sélectionner un appareil physique auquel rattacher les entités de cette intégration. Les capteurs, interrupteurs et boutons apparaîtront sous cet appareil dans Home Assistant."
         }
       },
       "sync": {
-        "title": "Copier les paramètres vers d'autres stores",
-        "description": "Choisissez les stores cibles et les catégories à synchroniser. Seules les catégories sélectionnées seront écrasées.\n\n⚠️ **L'azimut est toujours exclu** — chaque store conserve son orientation de fenêtre.",
+        "title": "Copier les paramètres vers d'autres volets",
+        "description": "Choisir les volets cibles et les catégories à synchroniser. Seules les catégories sélectionnées seront écrasées.\n\n⚠️ L'azimut est toujours exclu — chaque volet conserve son orientation propre.",
         "data": {
-          "target_entries": "Stores cibles",
+          "target_entries": "Volets cibles",
           "sync_categories": "Catégories à synchroniser"
         }
       },
       "summary": {
-        "title": "Résumé de la configuration",
+        "title": "Résumé de configuration",
         "description": "{summary}"
       },
       "sync_confirm": {
-        "title": "Copier les paramètres — Confirmer",
-        "description": "Copie des paramètres depuis **{source_name}**. Vos paramètres actuels seront enregistrés avant la copie.\n\nLes catégories suivantes seront écrasées :\n\n{categories_summary}\n\nSur ces stores :\n\n{entries_summary}\n\nChaque store conserve son nom, ses entités, son azimut et son association d'appareil.",
+        "title": "Copie des paramètres — Confirmation",
+        "description": "Copie des paramètres depuis **{source_name}**. Vos paramètres actuels seront enregistrés avant la copie.\n\nLes catégories suivantes seront écrasées :\n\n{categories_summary}\n\nSur ces volets :\n\n{entries_summary}\n\nChaque volet conservera son nom, ses entités, son azimut et son association d'appareil.",
         "data": {
           "confirm": "Confirmer la synchronisation"
         }
       },
       "light_cloud": {
-        "title": "Capteurs de lumière et suppression nuageuse",
+        "title": "Capteurs de lumière et couverture nuageuse",
         "description": "Configurer des capteurs de lumière et météo pour détecter la présence de nuages.",
         "data": {
           "weather_entity": "Entité météo (optionnel)",
@@ -835,7 +835,7 @@
       },
       "temperature_climate": {
         "title": "Température et mode climatique",
-        "description": "Ajuster les positions des stores selon la température, la présence et les stratégies saisonnières.",
+        "description": "Ajuster les positions des volets selon la température, la présence et les stratégies saisonnières.",
         "data": {
           "climate_mode": "Activer le mode climatique",
           "temp_entity": "Capteur de température intérieure",
@@ -849,8 +849,8 @@
       }
     },
     "abort": {
-      "no_covers_to_sync": "Aucun autre store du même type disponible pour la synchronisation.",
-      "no_targets_selected": "Aucun store sélectionné pour la synchronisation.",
+      "no_covers_to_sync": "Aucun autre volet du même type n'existe pour la synchronisation.",
+      "no_targets_selected": "Aucun volet sélectionné pour la synchronisation.",
       "no_categories_selected": "Aucune catégorie sélectionnée pour la synchronisation.",
       "user_cancelled": "Synchronisation annulée.",
       "sync_complete": "Paramètres synchronisés avec succès."
@@ -860,7 +860,7 @@
     "sensor": {
       "control_status": {
         "state": {
-          "force_override_active": "Priorité forcée active",
+          "force_override_active": "Forçage par contrainte actif",
           "motion_timeout": "Aucun mouvement — position par défaut utilisée"
         }
       },
@@ -868,7 +868,7 @@
         "state": {
           "not_configured": "Non configuré",
           "motion_detected": "Mouvement détecté",
-          "timeout_pending": "Délai d'expiration en attente",
+          "timeout_pending": "Temporisation en attente",
           "no_motion": "Aucun mouvement",
           "waiting_for_data": "En attente de données"
         }
@@ -881,12 +881,12 @@
           "summer": "Été",
           "winter": "Hiver",
           "default": "Par défaut",
-          "manual_override": "Priorité manuelle",
-          "motion_timeout": "Délai mouvement",
-          "force_override": "Priorité forcée",
+          "manual_override": "Forçage manuel",
+          "motion_timeout": "Temporisation de mouvement",
+          "force_override": "Forçage par contrainte",
           "custom_position": "Position personnalisée",
-          "weather_override": "Priorité météo",
-          "cloud_suppression": "Suppression nuageuse"
+          "weather_override": "Forçage météo",
+          "cloud_suppression": "Réduction nuageuse"
         }
       }
     },
@@ -922,30 +922,30 @@
   "selector": {
     "mode": {
       "options": {
-        "cover_blind": "Store vertical",
-        "cover_awning": "Store banne horizontal",
-        "cover_tilt": "Store à lames orientables"
+        "cover_blind": "Volet vertical",
+        "cover_awning": "Store banne",
+        "cover_tilt": "Persiennes"
       }
     },
     "tilt_mode": {
       "options": {
-        "mode1": "Unidirectionnel (0% = fermé / 100% = ouvert)",
+        "mode1": "Sens unique (0% = fermé / 100% = ouvert)",
         "mode2": "Bidirectionnel (0% = fermé / 50% = ouvert / 100% = fermé)"
       }
     },
     "sync_categories": {
       "options": {
-        "geometry": "Géométrie du store (dimensions, profondeur, appui)",
+        "geometry": "Géométrie du volet (dimensions, profondeur, appui)",
         "sun_tracking": "Suivi solaire (champ de vision, limites d'élévation)",
         "blind_spot": "Configuration de l'angle mort",
         "position": "Paramètres de position (défaut, coucher, décalages)",
-        "interp": "Étalonnage de position",
-        "automation": "Planning et minuterie (seuils, heures début/fin)",
-        "manual_override": "Priorité manuelle",
-        "force_override": "Priorité forcée",
+        "interp": "Calibration de position",
+        "automation": "Programmation et horaires (seuils, heures début/fin)",
+        "manual_override": "Forçage manuel",
+        "force_override": "Forçage par contrainte",
         "custom_position": "Positions personnalisées",
-        "motion_override": "Priorité mouvement",
-        "weather_override": "Priorité météo",
+        "motion_override": "Forçage par présence",
+        "weather_override": "Forçage météo",
         "glare_zones": "Zones d'éblouissement",
         "climate": "Configuration climatique (température, présence, lux)",
         "weather": "Conditions météorologiques",
